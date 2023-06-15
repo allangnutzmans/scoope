@@ -1,0 +1,367 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block style%}
+/*Header Vídeo*/
+header {
+  position: relative;
+  background-color: black;
+  height: 80vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  top: 80px; 
+  right: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+  .content1{
+    display: flex;
+    flex-direction: column;
+    width: 992px;
+    height: 100%;
+  }
+  .headline {
+    color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:96px;
+  }
+  .headline h2 {
+    font-size:64px;
+    text-transform:uppercase;
+    margin: 0 0 30px 0;
+    max-width: 512px;
+}
+.headline p {
+    font-weight: 300px;
+    line-height: 1.5;
+    max-width: 512px;
+  }
+.headline .buttons {
+    margin-top: 32px;
+    
+  }
+.headline .buttons a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-right: 24px;
+  }
+.headline .buttons a.get-started {
+    padding: 12px 24px;
+    border: 1px solid #ffffff;
+    border-radius: 0 16px;
+}
+.buttons a.get-started:hover {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 0 16px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+.buttons a.read-more:hover {
+    border-bottom: 2px solid white;
+}
+/* SECTIONS */
+.sections{
+  background-color:#f5f5f7;
+}
+.section-text {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.5em 0 2em 0;contrib
+  padding-bottom: 7px;
+}
+
+/* CAROUSSEL */
+.carousel{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.carousel-inner {
+  padding: 1em 1em 1em 10em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 20px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color:  #6b6b6b;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+  
+.card .img-wrapper {
+    max-width: 100%;
+    height: 23em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+    border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+  section .team{
+    display: flex;
+    flex-direction: column;
+  } 
+}
+/*TEAM*/
+.team img{
+  max-width: 200px;
+  border-radius: 100%;
+  padding-bottom: 15px;
+  
+}
+.team .profile {
+  flex: 33.3333333333%;
+  text-align: center;
+  margin: 0 20px 100px 20px;
+  padding: 10px;
+}
+{% endblock %}
+{% block content%}
+<header>
+<!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+<div class="overlay"></div>
+
+<!-- The HTML5 video element that will create the background video on the header -->
+<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="{% static '/homepage/videohome.mp4' %}" type="video/mp4">
+</video>
+<!-- The header content -->
+<div class="container h-100">
+    <div class="d-flex h-100">
+    <div class="w-100 text-white">
+        <div class="content1">
+        <div class="headline">
+            <h2 class="animate__animated animate__backInDown">Microscópio virtual</h2>
+            <p class="animate__animated animate__backInDown">
+            Explore o universo microscópico sem sair de casa e desvende segredos ocultos que estão além do alcance dos olhos comuns. Desperte sua curiosidade, mergulhe em detalhes nunca antes explorados. </p>
+            <div class="buttons animate__animated animate__backInDown">
+            <a href="#laminas" class="get-started animate__animated animate__backInDown">
+                Navegar
+            </a>
+            <a href="#info" class="read-more animate__animated animate__backInDown">
+                Saiba mais
+            </a>
+            </div>
+        </div>
+        </div>
+</header>
+    </div>
+<div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="sections scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <section>
+        <div class="section-text" id="laminas"><i><span><img srcset="{% static 'logo_black.png' %}7x" alt=""></span></i>Lâminas
+          <p class="text-center">Para mais, clique em "lâminas" no menu superior</p></div>
+            <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="card">
+                          <div class="img-wrapper"><img src="{% static 'homepage/carousel/embriao_galinha_33h_20X_full2.jpeg' %}" class="d-block w-100" alt="..."> </div>
+                          <div class="card-body">
+                              <h5 class="card-title">Embrião de Galinha</h5>
+                              <p class="card-text">Confira aqui a lâmina de Embrião de Galinha após 33h de incubação</p>
+                              <a href="{# url 'detail' laminas.id #}" class="btn btn-dark">Ver Lâmina</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="img-wrapper"><img src="{% static 'homepage/carousel/testiculo_de_ rato_full.jpeg' %}" class="d-block w-100" alt="..."> </div>
+                          <div class="card-body">
+                              <h5 class="card-title">Testículo de Rato 10x </h5>
+                              <p class="card-text">Confira aqui a lâmina de Testículo de Rato em aumento de 10x</p>
+                              <a href="#" class="btn btn-dark">Ver Lâmina</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="img-wrapper"><img src="{% static 'homepage/carousel/testiculo_de_rato_40x_full.png' %}" class="d-block w-100" alt="..."> </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Testículo de Rato 40x</h5>
+                            <p class="card-text">Confira aqui a lâmina de Testículo de Rato em aumento de 40x</p>
+                              <a href="#" class="btn btn-dark">Ver Lâmina</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="img-wrapper"><img src="{% static 'homepage/carousel/area1_full.png' %}" class="d-block w-100" alt="..."> </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Testículo de Rato 400x</h5>
+                            <p class="card-text">Confira aqui a lâmina de Testículo de Rato em aumento de 400x</p>
+                              <a href="#" class="btn btn-dark">Ver Lâmina</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </section>
+      <div class="container px-4 text-center">
+        <section>
+          <div class="section-text" id="sobre"><i><span><img srcset="logo_black.png 7x" alt=""></span></i>Sobre</div>
+          <p>SCOOPE é um microscópio virtual,  um ambiente web que disponibiliza lâminas de microscópio escaneadas na Universidade Estadual de Londrina (UEL), no Laboratório de Genética Toxicológica, aparelho (…).  
+            Desenvolvido primordialmente para lâminas de para lâminas com tecidos embrionários, o microscópio foi construído e é fomentado da seguinte maneira:
+            <ol style="list-style-type: none">
+              <img srcset="{% static '/homepage/images/sobre.png' %} 2x" alt="">
+              <li>
+              <strong>I. LÂMINAS:</strong>
+                <p>A UEL produz e fornece as lâminas microscópicas.</p>
+              </li>
+              <li><strong>II. COALESCÊNCIA:</strong>
+                <p>O programa X escaneia a lâmina coletando fragmentos em maior aumento microscópico,  e em seguida realiza a coalescência dos mesmos, gerando uma imagem única, com maior poder de aumento e resolução.
+                </p>
+              </li>
+              <li><strong>III. DESENVOLVIMENTO WEB:</strong>
+                <p>Foram desenvolvidas as páginas das lâminas, com  com as tecnologias HTML, CSS, JavaScript, Bootsrap. Para automação do site é utilizado Phyton. As páginas das lâminas possuem elementos interativos que facilitam a localização de regiões e estruturas além da possibilidade do aumento, como num microscópio comum.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </section>
+          <section>
+          <div class="section-text" id="objetivo"><i><span><img srcset="{% static '../../logo_black.png' %} 7x" alt=""></span></i>Objetivo</div>
+            <p>SCOOPE tem o objetivo de educacional e de divulgação científica. O site tem como principal objetivo educar e informar regiões, estruturas e nomes de componentes biológicos, como células e tecidos. Por meio de recursos interativos, e possibilidade de ampliação, as amostras presentes nas lâminas permitem aos visitantes explorarem e aprender sobre o mundo microscópico.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="section-text" id="equipe"><i><span><img srcset="{% static 'logo_black.png' %} 7x 7x" alt=""></span></i>Equipe</div>
+          <div class="team d-flex justify-content-center">
+            <div class="profile">
+              <img src="{% static '/homepage/images/allan_gnutzmans.jpeg' %}" alt="...">
+              <h3>Allan Gnutzmans</h3>
+              <p> Criador e desenvolvedor web do SCOOPE, frontend, webdesign e automação do site. Biólogo pela Universidade Estadual de Londrina, “percebi a demanda dos alunos em identificar estruturas microscópicas e uma possibilidade que poderia facilitar o aprendizado e o acesso dos estudantes ao mundo microscópico. A partir desse momento foi apenas transformar em realidade”. </p>
+            </div>
+            <div class="profile">
+              <img src="{% static '/homepage/images/sandra_lepri.jpg' %}"  alt="...">
+              <h3>Sandra Regina Lepri</h3>
+              <p>Possui graduação em Bacharelado Em Ciências Biológicas Modalidade Médi pela Universidade Estadual de Londrina (1982), graduação em Licenciatura Em Ciências Biológicas pela Universidade Estadual de Londrina (1986), mestrado em Genética e Biologia Molecular pela Universidade Estadual de Londrina (1992) e doutorado em Patologia Experimental pela Universidade Estadual de Londrina (2011). Atualmente é professor adjunto A da Universidade Estadual de Londrina onde ministra a disciplina de embriologia para cursos de graduação da área biológica e residência em enfermagem. Tem experiência na área de Genética, com ênfase em mutagênese e antimutagênese.</p>
+            </div>
+            <div class="profile">
+              <img src="{% static '/homepage/images/fabio_sakuray.jpeg' %}" alt="...">
+              <h3>Fábio Sakuray</h3>
+              <p>Possui graduação em Bacharelado Em Ciência da Computação pela Universidade Federal de Mato Grosso do Sul (1991) e mestrado em Ciência da Computação pela Universidade Federal de São Carlos (1994). Doutor em Engenharia Elétrica pela FEEC/Unicamp (2015). Atualmente é professor da Universidade Estadual de Londrina (UEL).</p>
+            </div>
+          </div>
+      </div>
+      </section>
+      </div>
+  </div>
+  
+<script>
+  
+
+  //Card Carousel
+var multipleCardCarousel = document.querySelector(
+  "#carouselExampleControls"
+);
+if (window.matchMedia("(min-width: 768px)").matches) {
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+  });
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+  $("#carouselExampleControls .carousel-control-next").on("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 4) {
+      scrollPosition += cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+} else {
+  $(multipleCardCarousel).addClass("slide");
+}
+</script>
+{% endblock %}
