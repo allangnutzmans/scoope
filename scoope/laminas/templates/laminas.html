@@ -104,11 +104,11 @@
             </div>
                 <div class="low-image">
                     <!--fullImage-->
-                    <img src="{% static 'imagens_laminas/' %}{{lamina.fullimage}}" usemap="#map" id="fullImage">
+                    <img src="{{lamina.imagem_completa.url}}" usemap="#map" id="fullImage">
                     <!--Mask-->
                     {% for estruturas in lamina.estruturas_set.all %}
                     <a href="{{lamina.link}}">
-                       <img class="mask" id="{{estruturas.id}}" src="{% static 'imagens_laminas/' %}{{estruturas.source_mask}}" alt="{{estruturas.nome_estrutura}}">
+                       <img class="mask" id="{{estruturas.id}}" src="{{estruturas.mascara.url}}" alt="{{estruturas.nome_estrutura}}">
                     </a>
                     {% endfor %}
             </div>
