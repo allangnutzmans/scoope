@@ -10,7 +10,7 @@ class Laminas(models.Model): #Descrição da lâmina
     fullimage = models.CharField(max_length=500,null=True)
 
     def __str__(self):
-        return f"{self.nome_lamina} {self.montagem} {self.aumento} {self.corte} {self.coloracao}" 
+        return f"{self.nome_lamina} {self.montagem} {self.aumento} {self.corte} {self.coloracao}" #Nome na tabela para o ADM
 
 
 class Estruturas(models.Model): #Estruturas
@@ -20,4 +20,4 @@ class Estruturas(models.Model): #Estruturas
     link = models.CharField(max_length=500, null=True)
   
     def __str__(self):
-        return f"{self.nome_estrutura} {self.lamina}"
+        return f"{self.nome_estrutura} {self.lamina}" ##Nome na tabela para o ADM
