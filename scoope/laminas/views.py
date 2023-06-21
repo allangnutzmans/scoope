@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from .models import Laminas, Estruturas
-
+'''
 def main(request):
     lamina_list = Laminas.objects.order_by()
     context = {
@@ -26,7 +26,7 @@ def index(request):
         "lamina_list": lamina_list
         }
     return render(request, 'master.html', context)
-
+'''
 def detail(request, laminas_id):
     lamina = get_object_or_404(Laminas, pk=laminas_id)
     lamina_list = Laminas.objects.order_by()

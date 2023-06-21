@@ -1,7 +1,7 @@
 from typing import Any
 from django.db import models
 
-class Laminas(models.Model):
+class Laminas(models.Model): #Descrição da lâmina
     nome_lamina = models.CharField(max_length=255)
     montagem = models.CharField(max_length=255)
     corte = models.CharField(max_length=255, null=True)
@@ -13,7 +13,7 @@ class Laminas(models.Model):
         return f"{self.nome_lamina} {self.montagem} {self.aumento} {self.corte} {self.coloracao}" 
 
 
-class Estruturas(models.Model):
+class Estruturas(models.Model): #Estruturas
     lamina = models.ForeignKey(Laminas, on_delete=models.CASCADE)
     nome_estrutura = models.CharField(max_length=255, null=True)
     source_mask = models.CharField(max_length=500, null=True)
