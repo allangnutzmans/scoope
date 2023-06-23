@@ -57,7 +57,7 @@ ROOT_URLCONF = 'scoope.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +123,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'global_static'
+    os.path.join(BASE_DIR, 'global_static') #BASE_DIR é a pasta onde está o manage.py
 ]
 
 # Default primary key field type
@@ -131,5 +131,5 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_URL = 'media/' # need "/"
+MEDIA_URL = 'media/imagens_laminas/' # need "/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

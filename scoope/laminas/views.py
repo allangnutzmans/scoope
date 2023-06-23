@@ -1,7 +1,34 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
-from django.template import loader
-from .models import Laminas, Estruturas
+from .models import Laminas
+
+
+def detail(request, laminas_id):
+    lamina = get_object_or_404(Laminas, pk=laminas_id)
+    lamina_list = Laminas.objects.order_by()
+    context = {
+        "lamina":lamina,
+        "lamina_list": lamina_list
+        }
+    return render(request, 'laminas.html', context)
+
+'''
+#Class Based View
+class LaminasListView(ListView):
+    queryset = Laminas.objects.all()
+    template_name = "laminas_list.html"
+#    def get_context_data(self, **kwargs):
+#        context = super(LaminasListView).get_context_data(**kwargs)
+#        print(context)
+#        return context
+        
+
+#Function Based View
+def Laminas_list_view(request):
+    queryset = Laminas.objects.all()
+    context = {
+        'lamina_list' : queryset
+    }
+    return render(request, 'laminas_list.html', context)
 
 def main(request):
     lamina_list = Laminas.objects.order_by()
@@ -26,12 +53,5 @@ def index(request):
         "lamina_list": lamina_list
         }
     return render(request, 'master.html', context)
+'''
 
-def detail(request, laminas_id):
-    lamina = get_object_or_404(Laminas, pk=laminas_id)
-    lamina_list = Laminas.objects.order_by()
-    context = {
-        "lamina":lamina,
-        "lamina_list": lamina_list
-        }
-    return render(request, 'laminas.html', context)
