@@ -34,24 +34,25 @@ p{
 .container-fluid{
     --bs-gutter-x: 10em;
 }
-
+.navbar-expand-lg .navbar-nav {
+  flex-direction: column;
+}
 .logo a, .logo img{
     font-size: 1.7em;
 }
 .dropdown-menu{
-    border: none;
-    border-radius: 0;
-    width: 100%;
-    opacity: 5%;
-    padding: 3em;
-    left: 0;
-  
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  opacity: 5%;
+  padding: 3em;
+  left: 0; 
 }
 .dropdown-menu, .dropdown-item{
     color: var(--bs-white);
 }
 .dropdown-item{
-    font-size: 0.8em;
+    font-size: 1em;
     text-transform: none;
 }
 .dropdown-menu ul{
@@ -140,13 +141,13 @@ p{
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="bg-body-tertiary p-1 rounded-3 collapse navbar-collapse menu-esquerda" id="navbarTogglerDemo02">
+        <div class="bg-body-tertiary justify-content-end p-1 rounded-3 collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="nav nav-pills justify-content-end">
             <li class="nav-item">
-              <a class="nav-link link-light" aria-current="page" href="#sobre">SOBRE</a>
+              <a class="nav-link link-light" aria-current="page" href="#objetivo">SOBRE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-light" href="#objetivo">OBJETIVO</a>
+              <a class="nav-link link-light" href="#equipe">OBJETIVO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link-light" href="#equipe">EQUIPE</a>
@@ -157,7 +158,7 @@ p{
                 <h4>LÂMINAS</h4> 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {% for lamina in lamina_list %}
-                  <li><a class="dropdown-item" href="{% url 'laminas' lamina.id %}">{{ lamina.nome_lamina }}</a></li>
+                  <li><a class="dropdown-item list-group" href="{% url 'laminas' lamina.id %}">{{ lamina.nome_lamina }}</a></li>
                 {% endfor %}
               </ul>
             </ul>

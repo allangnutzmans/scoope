@@ -1,12 +1,12 @@
 {% extends 'master.html' %}
 {% load static %}
-
 {% block style %}
+
 /*Header Vídeo*/
 header {
   position: relative;
   background-color: black;
-  height: 80%;
+  height: 90vh;
   width: 100%;
   overflow: hidden;
 }
@@ -61,7 +61,7 @@ header .overlay {
   display: flex;
   flex-direction: column;
   width: 62em;
-  height:100%;
+  height: 100%;
 }
 
 .headline {
@@ -80,7 +80,7 @@ header .overlay {
   max-width: 512px;
 }
 .headline p {
-    font-weight: 300px;
+    font-weight: 300;
     line-height: 1.5;
     max-width: 512px;
   }
@@ -118,6 +118,8 @@ header .overlay {
   text-align: center;
   text-transform: uppercase;
   padding: 1.5em 0 2em 0;
+}
+.section-text img{
   padding-bottom: 7px;
 }
 
@@ -128,23 +130,28 @@ header .overlay {
   align-items: center;
 }
 .carousel-inner {
-  padding: 1em 1em 1em 10em;
+  padding: 1em;
 }
 .card {
+  height: 31em;
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
   border-radius: 20px;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   background-color:  #6b6b6b;
   width: 6vh;
   height: 6vh;
-  border-radius: 50%;
+  border-radius: 10%;
   top: 50%;
   transform: translateY(-50%);
   }
+.card-text{
+  min-height: 50px;
+}
 @media (min-width: 768px) {
   .carousel-item {
     margin-right: 0;
@@ -155,10 +162,10 @@ header .overlay {
     display: flex;
   }
 }
-  
+
 .card .img-wrapper {
     max-width: 100%;
-    height: 23em;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,14 +175,12 @@ header .overlay {
     border-radius: 20px;
 }
 @media (max-width: 767px) {
-  .card .img-wrapper {
-    height: 17em;
-  }
   section .team{
     display: flex;
     flex-direction: column;
   } 
 }
+
 /*TEAM*/
 .profile img{
   max-width: 200px;
@@ -210,10 +215,9 @@ header .overlay {
   .container-fluid{
     --bs-gutter-x: 2em;
 }
-}
   header .container {
-  top: 10%;
-  right: 0%;
+  top: 20%;
+  left: 7%;
   position: relative;
   z-index: 2;
   }
@@ -240,6 +244,7 @@ header .overlay {
     font-weight: 300px;
     line-height: 1.5;
   }
+}
 
 {% endblock %}
 {% block content%}
@@ -272,7 +277,7 @@ header .overlay {
 </header>
 <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="sections scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
     <section>
-        <div class="section-text" id="laminas"><i><span><img srcset="{% static 'logo_black.png' %}7x" alt=""></span></i>Lâminas
+        <div class="section-text"><i><span><img srcset="{% static 'logo_black.png' %}7x" alt=""></span></i>Lâminas
           <p class="text-center">Para mais, clique em "lâminas" no menu superior</p></div>
             <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -327,7 +332,7 @@ header .overlay {
               </button>
           </div>
         </section>
-      <div class="container px-4 text-center">
+      <div class="container px-4 text-center" id="laminas">
         <section>
           <div class="section-text" id="sobre"><i><span><img srcset="logo_black.png 7x" alt=""></span></i>Sobre</div>
           <p>SCOOPE é um microscópio virtual,  um ambiente web que disponibiliza lâminas de microscópio escaneadas na Universidade Estadual de Londrina (UEL), no Laboratório de Genética Toxicológica, aparelho (…).  
