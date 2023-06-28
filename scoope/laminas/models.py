@@ -17,7 +17,7 @@ class Estruturas(models.Model): #Estruturas
     lamina = models.ForeignKey(Laminas, on_delete=models.CASCADE)
     nome_estrutura = models.CharField(max_length=255, null=True)
     mascara = models.ImageField(upload_to='imagens_laminas', null=True)
-    link = models.CharField(max_length=500, null=True)
+    #link = models.CharField(max_length=500, null=True)
   
     def __str__(self):
         return f"{self.nome_estrutura} {self.lamina}" ##Nome na tabela para o ADM

@@ -18,7 +18,8 @@
   padding: 15px 30px;
 }
 .thecontainer img {
-  max-width: 48.5em;
+  max-width: 100%;
+  height: auto;
   border-radius: 16px;
 }
 .low-image{
@@ -55,11 +56,17 @@
 }
 .show{display: block;}
 
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+    min-width: 310px;
+}
+
 {% endblock style%}
 {% block content%}
 
 <div class="general">
-    <div class="thecontainer d-inline-flex flex-wrap">
+    <div class="thecontainer container-lg d-inline-flex flex-wrap">
       <div class="col-5 content1">
         <h2>{{lamina.nome_lamina}}</h2>
         <ul>
@@ -96,27 +103,23 @@
         <div class="content2">
                 <div class="low-image">
                     <!--fullImage-->
-                    <img src="{{lamina.imagem_completa.url}}" usemap="#map" id="fullImage">
+                    <img src="{{lamina.imagem_completa.url}}" width="700" usemap="#map" id="fullImage">
                     <!--Mask-->
                     {% for estruturas in lamina.estruturas_set.all %}
                     <!--<a href="{{lamina.link}}">-->
-                       <img class="mask" id="{{estruturas.id}}" src="{{estruturas.mascara.url}}" alt="{{estruturas.nome_estrutura}}">
+                       <img class="mask" id="{{estruturas.id}}" src="{{estruturas.mascara.url}}" width="700" alt="{{estruturas.nome_estrutura}}">
                     <!--</a>-->
                     {% endfor %}
             </div>
             <!--Image map 
             <div class="imagemap">
                 <map name="map">
-                    <area shape="poly" coords="1155,1180,1050,1177,909,1113,780,897,777,679,860,532,955,449,1108,400,1185,391,1177,477,1166,502,1168,588,1151,643,1151,715,1136,768,1136,858,1126,893,1125,946,1132,1001,1118,1017,1129,1092,1141,1150,1144,1159"
-                   href="testiculo-de-rato-10x(2).html" alt="Testículo">
-                   <area shape="poly" coords="1155,1180,1050,1177,909,1113,780,897,777,679,860,532,955,449,1108,400,1185,391,1177,477,1166,502,1168,588,1151,643,1151,715,1136,768,1136,858,1126,893,1125,946,1132,1001,1118,1017,1129,1092,1141,1150,1144,1159"
-                   href="testiculo-de-rato-10x(2).html" alt="Testículo">
-                   <area shape="poly" coords="669,434,683,463,686,508,670,531,575,551,511,551,473,546,473,538,439,519,438,508,419,490,404,484,410,470,392,456,400,420,411,403,434,372,456,347,462,331,498,324,527,317,505,294,507,276,530,229,588,184,638,166,693,139,765,120,788,115,942,108,962,116,990,145,993,152,1034,118,1100,118,1182,143,1160,312,1143,319,1126,336,1110,341,1109,347,1083,350,1062,354,1051,362,1046,375,1022,383,1018,392,978,408,946,410,913,392,907,366,928,345,926,330,946,324,956,323,954,314,945,308,918,299,912,290,899,312,881,319,846,331,825,314,802,304,793,277,789,260,762,269,761,292,767,320,775,379,758,399,728,418,673,428,666,428"
-                   href="#linkproximapag" alt="Epidídimo">
-                   <area shape="poly" coords="519,1145,534,1153,545,1165,538,31176,521,1192,501,1186,491,1173,489,1162,490,1149,500,1146,516,1145"
-                   href="" alt="Ducto deferente">
-                   <area shape="poly" coords="1158,34,1118,24,1017,38,889,48,677,76,587,105,416,191,265,315,212,400,194,447,163,463,136,514,111,569,70,664,84,755,106,902,166,1017,233,1051,289,1114,375,1178,528,1263,589,1291,634,1292,660,1290,876,1330,913,1323,1157,1308,1145,1264,1028,1278,946,1279,790,1271,775,1257,706,1261,651,1257,608,1244,573,1225,497,1210,447,1182,433,1139,401,1119,392,1079,273,1025,247,1009,231,952,204,930,189,853,155,802,125,769,124,696,143,663,190,630,182,573,219,484,252,454,261,412,360,323,460,246,537,165,583,142,726,112,915,82,962,76,1027,78,1167,72,1161,35"
-                   href="#linkproximapag" alt="Parede da bolsa escrotal">
+                  <area shape="poly" coords="" href="" alt="">
+                  <area shape="poly" coords="" href="" alt="">
+                  <area shape="poly" coords="" href="" alt="">
+                  <area shape="poly" coords="" href="" alt="">
+                  <area shape="poly" coords="" href="" alt="">
+                  <area shape="poly" coords="" href="" alt="">
                 </map>
               </div>-->
             </div>

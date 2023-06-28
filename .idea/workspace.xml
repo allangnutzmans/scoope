@@ -5,68 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e904b51-2d1b-4d96-8457-fd447cf8d416" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scoope/laminas/static/logo_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scoope/laminas/static/logo_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scoope/laminas/static/logo_white1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scoope/media/laminas/joia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scoope/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoope/laminas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/laminas/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scoope/laminas/templates/laminas.html" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/laminas/templates/laminas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/albuginea.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/albuginea.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/ducto.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/ducto.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/embriao_galinha_33h_20X_coracao.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/embriao_galinha_33h_20X_coracao.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/embriao_galinha_33h_20X_encefalo.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/embriao_galinha_33h_20X_encefalo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/embriao_galinha_33h_20X_somitos.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/embriao_galinha_33h_20X_somitos.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/embriao_galinha_33h_20X_zonaopaca.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/embriao_galinha_33h_20X_zonaopaca.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/embriao_galinha_33h_20X_zonapelucida.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/embriao_galinha_33h_20X_zonapelucida.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/epididimo.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/epididimo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/epitelio_germinativo.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/epitelio_germinativo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/espaco_intersticial.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/espaco_intersticial.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/espermatocitoprimario.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/espermatocitoprimario.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/espermatogonia.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/espermatogonia.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/espermátide.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/espermátide.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/leydig.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/leydig.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/luz.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/luz.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/parede.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/parede.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/sertoli.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/sertoli.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/testiculo.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/testiculo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/media/imagens_laminas/tubulos_seminiferos.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/tubulos_seminiferos.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/albuginea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/ducto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_coracao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_coracao_sombra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_encefalo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_encefalo_sombra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_full.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/embriao_galinha_33h_20X_full.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_somitos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_somitos_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_zonaopaca.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_zonaopaca_sombra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_zonapelucida.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/embriao_galinha_33h_20X_zonapelucida_sombra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/epididimo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/epitelio_germinativo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/espaco_intersticial.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/espermatocitoprimario.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/espermatogonia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/espermátide.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/leydig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/luz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/parede.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/sertoli.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_ rato_full.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/testiculo_de__rato_full.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_rato/40xxnaosei/area1_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_rato/40xxnaosei/embriao_galinha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_rato/40xxnaosei/epitelio_germinativo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_rato/testiculo_de_rato_40x/espaco_intersticial.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_rato/testiculo_de_rato_40x/testiculo_de_rato_40x_full.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/testiculo_de_rato_40x_full.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_rato/testiculo_de_rato_40x/tubulos_seminiferos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_rato_400x_full.png" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/media/laminas/testiculo_de_rato_400x_full.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_de_rato_40x_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/testiculo_derato_400x_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/static/imagens_laminas/tubulos_seminiferos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/templates/master.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,26 +17,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/scoope" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RCYPakzekv7iRh96HbqG9zA1Dt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Image-field",
+    "git-widget-placeholder": "responsivness",
     "last_opened_file_path": "/home/allan/django_venv",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -107,10 +53,17 @@
       <updated>1686755507042</updated>
       <workItem from="1687791701023" duration="223000" />
       <workItem from="1687792116020" duration="1589000" />
+      <workItem from="1687975404100" duration="147000" />
+      <workItem from="1688054498747" duration="658000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/scoope" />
+    </ignored-roots>
   </component>
 </project>
