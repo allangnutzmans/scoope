@@ -18,7 +18,8 @@
   padding: 15px 30px;
 }
 .thecontainer img {
-  max-width: 48.5em;
+  max-width: 100%;
+  height: auto;
   border-radius: 16px;
 }
 .low-image{
@@ -55,11 +56,17 @@
 }
 .show{display: block;}
 
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+    min-width: 310px;
+}
+
 {% endblock style%}
 {% block content%}
 
 <div class="general">
-    <div class="thecontainer d-inline-flex flex-wrap">
+    <div class="thecontainer container-lg d-inline-flex flex-wrap">
       <div class="col-5 content1">
         <h2>{{lamina.nome_lamina}}</h2>
         <ul>
@@ -96,11 +103,11 @@
         <div class="content2">
                 <div class="low-image">
                     <!--fullImage-->
-                    <img src="{{lamina.imagem_completa.url}}" usemap="#map" id="fullImage">
+                    <img src="{{lamina.imagem_completa.url}}" width="700" usemap="#map" id="fullImage">
                     <!--Mask-->
                     {% for estruturas in lamina.estruturas_set.all %}
                     <!--<a href="{{lamina.link}}">-->
-                       <img class="mask" id="{{estruturas.id}}" src="{{estruturas.mascara.url}}" alt="{{estruturas.nome_estrutura}}">
+                       <img class="mask" id="{{estruturas.id}}" src="{{estruturas.mascara.url}}" width="700" alt="{{estruturas.nome_estrutura}}">
                     <!--</a>-->
                     {% endfor %}
             </div>
