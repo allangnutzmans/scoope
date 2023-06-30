@@ -123,7 +123,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'global_static') #BASE_DIR é a pasta onde está o manage.py
+    BASE_DIR / 'global_static'
 ]
 
 # Default primary key field type
