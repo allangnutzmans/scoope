@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e904b51-2d1b-4d96-8457-fd447cf8d416" name="Changes" comment=":iphone: Work on respoinsive design">
+    <list default="true" id="5e904b51-2d1b-4d96-8457-fd447cf8d416" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gerador 5.0 .py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/scoope/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/scoope/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoope/scoope/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoope/scoope/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +13,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/scoope" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2RCYPakzekv7iRh96HbqG9zA1Dt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -33,23 +26,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "responsivness",
-    "last_opened_file_path": "/home/allan/django_venv/scoope/docs",
+    "git-widget-placeholder": "Documentation",
+    "last_opened_file_path": "/home/allan/django_venv/activate/bin/activate",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/scoope/docs" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scoope/backup_global_static" />
+      <recent name="$PROJECT_DIR$/scoope/templates" />
+      <recent name="$PROJECT_DIR$/scoope" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,44 +55,21 @@
       <updated>1686755507042</updated>
       <workItem from="1687791701023" duration="223000" />
       <workItem from="1687792116020" duration="1589000" />
-      <workItem from="1687975404100" duration="147000" />
-      <workItem from="1688054498747" duration="1198000" />
-      <workItem from="1688055922946" duration="2428000" />
-      <workItem from="1688061726719" duration="27000" />
-      <workItem from="1688061780630" duration="1649000" />
     </task>
-    <task id="LOCAL-00001" summary=":iphone: Work on respoinsive design">
-      <created>1688055356816</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1688055356816</updated>
-    </task>
-    <task id="LOCAL-00002" summary=":iphone: Work on respoinsive design">
-      <created>1688055366974</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1688055366974</updated>
-    </task>
-    <task id="LOCAL-00003" summary=":iphone: Work on respoinsive design">
-      <created>1688055377261</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1688055377261</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/scoope" />
-    </ignored-roots>
-    <MESSAGE value=":iphone: Work on respoinsive design" />
-    <option name="LAST_COMMIT_MESSAGE" value=":iphone: Work on respoinsive design" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
