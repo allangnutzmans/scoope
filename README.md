@@ -1,49 +1,49 @@
 # SCOOPE  
 
-SCOOPE é um simulador de microscópio virtual desenvolvido como uma aplicação web.  
+SCOOPE is a virtual microscope simulator developed as a web application.  
 
-## Funcionalidades  
-- **Navegação entre estruturas:** explore diferentes regiões das amostras com facilidade.  
-- **Imagens reais em alta ampliação:** imagens de microscopia eletrônica capturadas diretamente de amostras reais.  
-- **Identificação de estruturas:** ferramentas para destacar e identificar partes importantes das imagens.  
+## Features  
+- **Navigation between structures:** easily explore different regions of the samples.  
+- **Real high-magnification images:** electron microscopy images captured directly from real samples.  
+- **Structure identification:** tools to highlight and identify important parts of the images.  
 
-## Parcerias  
-Este projeto foi desenvolvido em parceria com:  
-- **Universidade Estadual de Londrina (UEL)**  
-- **Laboratório de Embriologia**  
-- **Departamento de Ciência da Computação**  
+## Partnerships  
+This project was developed in partnership with:  
+- **State University of Londrina (UEL)**  
+- **Embryology Laboratory**  
+- **Department of Computer Science**  
 
-As imagens de microscopia eletrônica foram produzidas e fornecidas pelo Laboratório de Embriologia da UEL, garantindo alta qualidade e realismo.  
+The electron microscopy images were produced and provided by the Embryology Laboratory at UEL, ensuring high quality and realism.  
 
-## Tecnologias utilizadas  
+## Technologies Used  
 - **Backend:** Django  
-- **Frontend:** HTML, CSS e JavaScript  
-- **Banco de Dados:** [Especifique o banco utilizado, ex.: PostgreSQL, SQLite, etc.]  
-- **Outras tecnologias:** [Liste bibliotecas ou ferramentas específicas usadas no projeto, se houver.]  
+- **Frontend:** HTML, CSS, and JavaScript  
+- **Database:** [Specify the database used, e.g., PostgreSQL, SQLite, etc.]  
+- **Other technologies:** [List specific libraries or tools used in the project, if applicable.]  
 
-## Como executar o projeto  
-1. Clone este repositório
-2. 	Crie um ambiente virtual e ative-o:
-
+## How to Run the Project  
+1. Clone this repository:  
+   ```bash  
+   git clone [Repository URL]  
+```
+	2.	Create a virtual environment and activate it:
+   ```bash 
 python -m venv venv  
-source venv/bin/activate  # No Windows: venv\Scripts\activate  
-
-
-	3.	Instale as dependências:
-
-pip install -r requirements.txt  
-
-
-	4.	Configure o banco de dados:
-
+source venv/bin/activate  # On Windows: venv\Scripts\activate  
+```
+	3.	Install the dependencies:
+   ```bash 
+pip install -r requirements.txt     
+``` 
+	4.	Set up the database:
+```bash
 python manage.py migrate  
-
-
-	5.	Execute o servidor de desenvolvimento:
-
+```
+	5.	Run the development server:
+```bash
 python manage.py runserver  
-
-
-	6.	Acesse o aplicativo no navegador em:
-
+```
+	6.	Open the application in your browser:
+```bash
 http://127.0.0.1:8000  
+```
