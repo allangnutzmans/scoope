@@ -23,15 +23,15 @@ The electron microscopy images were produced and provided by the Embryology Labo
 
 ## How to Run the Project  
 1. Clone this repository:  
-   ```bash  
+```bash  
    git clone [Repository URL]  
 ```
-	2.	Create a virtual environment and activate it:
-   ```bash 
+2.	Create a virtual environment and activate it:
+```bash 
 python -m venv venv  
 source venv/bin/activate  # On Windows: venv\Scripts\activate  
 ```
-	3.	Install the dependencies:
+3.	Install the dependencies:
    ```bash 
 pip install -r requirements.txt     
 ``` 
@@ -39,11 +39,11 @@ pip install -r requirements.txt
 ```bash
 python manage.py migrate  
 ```
-	5.	Run the development server:
+5.	Run the development server:
 ```bash
 python manage.py runserver  
 ```
-	6.	Open the application in your browser:
+6.	Open the application in your browser:
 ```bash
 http://127.0.0.1:8000  
 ```
