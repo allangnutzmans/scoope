@@ -32,10 +32,10 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate  
 ```
 3.	Install the dependencies:
-   ```bash 
+```bash 
 pip install -r requirements.txt     
 ``` 
-	4.	Set up the database:
+4.	Set up the database:
 ```bash
 python manage.py migrate  
 ```
