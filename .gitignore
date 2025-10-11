@@ -1,2 +1,89 @@
-# created by virtualenv automatically
-*
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+bin/
+lib/
+lib64/
+pyvenv.cfg
+include/
+share/
+Scripts/
+pip-selfcheck.json
+
+# Django
+*.log
+*.pot
+db.sqlite3
+db.sqlite3-journal
+/scoope/db.sqlite3
+/scoope/media/
+
+# Static files (uncomment if you use collectstatic)
+# /scoope/static/
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Translations
+*.mo
+
+# Sphinx documentation
+docs/_build/
